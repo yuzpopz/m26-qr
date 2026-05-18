@@ -232,6 +232,27 @@
       --slot-gap: 18px;
     }
   }
+
+  .footer {
+    position: fixed;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(0.52rem, 1.8vw, 0.61rem);
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    opacity: 0.8;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .footer span {
+    color: var(--red);
+    display: inline-block;
+    transform: translateY(-1px);
+  }
 </style>
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "374e023ced1a44f5ba7479a78d721744"}'></script><!-- End Cloudflare Web Analytics -->
@@ -260,6 +281,10 @@
     <button class="result-close" id="resultClose">tap anywhere to close</button>
   </div>
 </div>
+
+<footer class="footer">
+  Made with <span>❤︎</span> by Yu Qing Peng
+</footer>
 
 <script>
 // ── Images ────────────────────────────────────────────────────────────────────
